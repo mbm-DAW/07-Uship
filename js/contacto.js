@@ -15,6 +15,11 @@ function validarFormulario(evento) {
     if (nombre.length == 0) {
         msgErr += "El nombre no puede ser vacio \n";
     }
+    /** validar direccion*/
+    let direccion = document.getElementById('direccion').value;
+    if (direccion.length == 0) {
+        msgErr += "La direccion no puede ser vacia \n";
+    }
 
     /** validar email con una mascara y querySelector del DOM*/
     let validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
@@ -32,8 +37,6 @@ function validarFormulario(evento) {
 
     /** validar check */
     let check_envio = document.querySelector("#check-envio");
-
-
     if (check_envio.checked == false) {
         msgErr += "Debe previamente verificar el check de envio";
     }

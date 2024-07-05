@@ -43,7 +43,7 @@ function MostrarCalculo() {
         mensaje1.textContent ='Coste de '+arrayPrecios[d][p]+' €';
     }
     else {
-        mensaje1.textContent = "Seleccione";
+        mensaje1.textContent = "Seleccione peso y Destino";
     }
 
 }

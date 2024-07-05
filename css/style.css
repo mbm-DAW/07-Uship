@@ -8,11 +8,10 @@ Display Flex
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #F9F9F9;
     width: 100%;
     height: 100vh;
 }
-
 
 .contenedor-H {
     display: flex;
@@ -30,6 +29,10 @@ Display Flex
     justify-content: center;
     /* alineamiento vertical */
     align-items: center;
+}
+
+.item {
+    border: 1px solid black;
 }
 
 /*
@@ -72,12 +75,12 @@ nav li {
     float: left;
     width: 150px;
     border-right: 2px solid #bbb;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav li a {
     display: block;
-    color:#f2f2f2;
+    color: #f2f2f2;
     text-align: center;
     font-size: 20px;
     padding: 18px;
@@ -86,7 +89,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color:#BF452A;
+    background-color: #BF452A;
     border-radius: 10px;
 }
 
@@ -99,28 +102,41 @@ nav .active {
 /****************************************************
 Cabecera index
 *****************************************************/
-header{
+header {
 
     margin-top: 65px;
 }
 
-header img{
-        width: 100%;
-        height: 500px;
+header img {
+    width: 100%;
+    height: 500px;
 }
-#mensaje1{
+
+#mensaje1 {
     font-size: 30px;
- 
+    text-align: center;
     width: 100%;
     height: 100px;
 }
-.contenedor-1{
+
+
+.contenedor-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 20vh;
+}
+
+.contenedor-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    font-size: 20px;
 }
 
 
@@ -133,7 +149,7 @@ Seccion Formulario
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 #formulario form {
@@ -141,26 +157,55 @@ Seccion Formulario
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 80%;
+
+    width: 60%;
 }
 
 #formulario form>input,
 hr {
     width: 80%;
-
+    background-color: ghostwhite
 }
 
 #formulario #formulario-errores {
     width: 80%;
-    height: 30%;
     border: 1px #333 solid;
     text-align: center;
-
 }
 
 #formulario #formulario-botones {
     padding: 25px;
+}
+
+/***********************************************
+Seccion envios
+***********************************************/
+#envios {
+    font-size: 30px;
+}
+
+#envios select {
+    font-size: 15px;
+    margin: 10px;
+}
+
+/************************************************
+Seccion Seguimiento
+************************************************/
+#seguimiento {
+    font-size: 30px;
+    margin: 50px;
+
+}
+
+#seguimiento #codigo-seguimiento {
+    font-size: 30px;
+    width: 50%;
+}
+
+#seguimiento #error-seguimiento {
+    font-size: 20px;
+    color: red;
 }
 
 /***************************************************
@@ -173,6 +218,6 @@ footer {
     padding: 20px;
     margin: 25px;
     background-color: #333;
- color:#f2f2f2;;
+    color: #f2f2f2;
+    
 }
-

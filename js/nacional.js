@@ -1,21 +1,16 @@
-window.onload = () => {
-    let texto = document.querySelector("#textoMagico");
-    let crearboton =document.querySelector("#crearboton");
+
+    let textoMagico = document.querySelector("#textoMagico");
+    let botonMagico = document.querySelector("#botonMagico");
 
 
-    texto.addEventListener("click", () =>{
-        texto.setAttribute("hidden","true");
-        let boton =document.createElement("button");
-        boton.textContent="Pulsa para aperceder el texto";
-        boton.addEventListener("click",mostrarTexto)
-        crearboton.appendChild(boton);
-        
-     
+    textoMagico.addEventListener("click", () => {
+        textoMagico.style.visibility = 'hidden';
+        botonMagico.style.visibility = 'visible';
+    })
+
+    botonMagico.addEventListener("click", () => {
+        textoMagico.style.visibility = 'visible';
+        botonMagico.style.visibility = 'hidden';
     })
 
 
-    function mostrarTexto(){
-        texto.setAttribute("hidden","false");
-            console.log("ggggggg");
-    }
-}
